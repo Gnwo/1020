@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/*general ui, common ui*/
+.button {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;/*bold*/
+    height: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    padding: 8px 32px;
+    background-color: #18d26e;
+    text-transform: uppercase;
+}
+/*header*/
+#header{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 800;
+}
+
+/*상단로고*/
+#top-logo{
+    float: left;
+}
+#top-logo a {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    font-size: 24px;
+    text-transform: uppercase;
+
+}
+
+/*상단메뉴*/
+#gnb {
+    float: right;
+}
+#gnb ul {
+    overflow: hidden;
+}
+#gnb ul li {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+}
+/*section area*/
+/*section common*/
+section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section:nth-of-type(even){
+    background-color: #f9f9f9;
+}
+section > article {
+    text-align: center;
+    padding: 0 20%;
+    color: #ffffff;
+}
+section > article > h2{
+    font-size: 40px;
+}
+section > article > p {
+    font-size: 20px;
+}
+section#intro {
+    background-image: url(/img/intro/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section#MyProfile {
+    background-image: url(/img/bg/profile_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
